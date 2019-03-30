@@ -1,0 +1,11 @@
+/build/
+/target/
+client.*
+.classpath
+.idea
+.mvn
+.project
+.settings
+*.iml
+*.ipr
+*.iws
