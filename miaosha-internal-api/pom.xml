@@ -5,12 +5,26 @@
     <parent>
         <artifactId>zyg-miaosha</artifactId>
         <groupId>cn.hdu.learn</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>miaosha-interna-api</artifactId>
+    <artifactId>miaosha-internal-api</artifactId>
 
+    <dependencies>
+        <!-- 分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
+
+        <!--自身模块依赖-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>miaosha-api</artifactId>
+            <version>1.0.0-RELEASE</version>
+        </dependency>
+    </dependencies>
 
 
 
