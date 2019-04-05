@@ -1,10 +1,10 @@
-package cn.hdu.learn.miaosha;
+package cn.hdu.learn.miaosha.app;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -17,15 +17,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 @SpringBootApplication
-@MapperScan(basePackages = {
+/*@MapperScan(basePackages = {
         "cn.hdu.learn.miaosha.dao"
-})
+})*/
 @ComponentScan(basePackages = {
-        "cn.hdu.learn.miaosha",
+        "cn.hdu.learn.miaosha"
 })
-@ImportResource(value = {"classpath:spring/dubbo-consumer.xml", "classpath:spring/dubbo-provider.xml"})
+//@ImportResource(value = {"classpath:spring/dubbo-consumer.xml", "classpath:spring/dubbo-provider.xml"})
 @EnableTransactionManagement
 @EnableScheduling
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class  MiaoshaApplication {
 
     /**

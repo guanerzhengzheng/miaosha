@@ -1,4 +1,4 @@
-package cn.hdu.learn.miaosha.test;
+package cn.hdu.learn.miaosha.app.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

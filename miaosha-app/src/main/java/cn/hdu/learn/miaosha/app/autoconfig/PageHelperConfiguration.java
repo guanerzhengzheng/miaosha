@@ -1,4 +1,4 @@
-package cn.hdu.learn.miaosha.autoconfig;
+package cn.hdu.learn.miaosha.app.autoconfig;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInterceptor;
