@@ -1,4 +1,4 @@
-package cn.hdu.learn.maiosha.center;
+package cn.hdu.learn.miaosha.center.service;
 
 import cn.hdu.learn.miaosha.dal.dao.MiaoshaUserMapper;
 import cn.hdu.learn.miaosha.dal.model.MiaoshaUser;

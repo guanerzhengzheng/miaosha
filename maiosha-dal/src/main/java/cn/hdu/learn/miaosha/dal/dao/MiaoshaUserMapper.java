@@ -55,6 +55,6 @@ public interface MiaoshaUserMapper {
      */
     int updateByPrimaryKey(MiaoshaUser record);
 
-    @Select("select * form user where id = #{id}")
+    @Select("select * from miaosha_user where id = #{id}")
     MiaoshaUser getById(@Param("id") Long id);
 }
